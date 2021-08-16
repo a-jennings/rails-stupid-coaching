@@ -1,8 +1,24 @@
-<h1>Stupid Coaching</h1>
-<h2>Your question:</h2>
-<%= params[:ask] %>
-<h2>Your coach says:</h2>
-<%= params[:output] %>
-<br>
-<br>
-<%= link_to 'Ask another question', ask_path %>
+<div class="container d-flex justify-content-center p-4">
+  <h1>Stupid Coaching</h1>
+</div>
+
+<div class="container mx-auto">
+  <div class="row">
+    <div class="card m-4 text-center">
+      <div class="card-body">
+        <h2>Your question:</h2>
+        <%= params[:ask] %>
+      </div>
+    </div>
+    <div class="card m-4 text-center">
+      <div class="card-body">
+        <h2>Your coach says:</h2>
+        <%= params[:output] %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex justify-content-center">
+  <%= link_to 'Ask another question', ask_path %>
+</div>
